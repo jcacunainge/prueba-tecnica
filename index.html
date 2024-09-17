@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Consulta Algoritmea</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Consulta de Números</h1>
+
+      <!-- Input para el tamaño de la lista -->
+      <label for="tamañoLista">* Tamaño de la lista:</label>
+      <input
+        type="number"
+        id="tamañoLista"
+        placeholder="Ingresa el tamaño de la lista"
+      />
+
+      <!-- Input para la lista de números base -->
+      <label for="listaNumeros"
+        >* Lista de números (separados por espacios):</label
+      >
+      <input type="text" id="listaNumeros" placeholder="Ejemplo: 2 4 5 7 9" />
+
+      <!-- Input para el número de consultas -->
+      <label for="numConsultas">* Número de consultas:</label>
+      <input
+        type="number"
+        id="numConsultas"
+        placeholder="Ingresa el número de consultas"
+      />
+
+      <!-- Input para la lista de consultas -->
+      <label for="consultas"
+        >Números a consultar (separados por espacios):</label
+      >
+      <input type="text" id="consultas" placeholder="Ejemplo: 2 5 6 10" />
+
+      <button id="consultarBtn">Consultar</button>
+
+      <h2>Resultados</h2>
+      <div id="resultados"></div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
